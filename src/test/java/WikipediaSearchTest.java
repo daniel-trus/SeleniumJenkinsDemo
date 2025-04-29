@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,6 +22,7 @@ public class WikipediaSearchTest {
         driver = new ChromeDriver();
     }
 
+    @Description("Sprawdza wyszukiwanie w Wikipedii")
     @Test
     public void searchWikipediaForSelenium() {
         driver.get("https://www.wikipedia.org");
